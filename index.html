@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Immunocal Cochabamba</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Haz el test de 1 minuto y descubre cuánto le exige tu estilo de vida a tu glutatión. Immunocal original con entrega a domicilio en Cochabamba y asesoría personal de Yunior Figueredo.">
+<meta name="theme-color" content="#0b4f7c">
+<!-- Vista previa al compartir en Facebook/WhatsApp. -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_BO">
+<meta property="og:title" content="¿Cuánto le exige tu estilo de vida a tus defensas? Test de 1 minuto">
+<meta property="og:description" content="Responde 6 preguntas y te recomiendo lo ideal para ti. Immunocal original con entrega en Cochabamba.">
+<meta property="og:image" content="https://yunior-conste.github.io/immunocal/img/portada.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://yunior-conste.github.io/immunocal/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='32' fill='%230b4f7c'/><text x='32' y='43' font-size='32' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>Y</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- ANALÍTICA (PENDIENTE): pega aquí Meta Pixel y/o Google Analytics. Cada envío registra "whatsapp_click" con su Ref. -->
+<style>
+/* Layout: embudo de una columna (gancho → test → solución → precio por día → compromiso → negocio → objeciones → cierre).
+   Un solo llamado principal en toda la página: "Haz el test". */
+:root{
+  --bg:#f4f8f7; --paper:#ffffff; --ink:#0d2233; --soft:#4d6272; --line:#d6e2e4;
+  --brand:#0b4f7c; --brand-2:#e3f0f7; --leaf:#1f8a5b; --leaf-2:#e2f4ea; --wa:#1fa855; --sun:#f2b632; --sun-2:#fff4d6;
+  --night:#081a27; --night-2:#0f2a3d;
+  --display:"Bricolage Grotesque","Trebuchet MS",sans-serif; --body:"Figtree",system-ui,sans-serif;
+  --r:20px;
+}
+[hidden]{display:none!important}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;padding-bottom:calc(80px + env(safe-area-inset-bottom,0px))}
+@media(min-width:900px){body{padding-bottom:0}}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);line-height:1.08;letter-spacing:-.02em;text-wrap:balance}
+h2{font-size:clamp(1.75rem,5.5vw,2.6rem);margin-bottom:14px}
+h3{font-size:1.2rem;line-height:1.2}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+section{padding-block:64px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--brand);margin-bottom:10px}
+.eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--leaf)}
+.lead{color:var(--soft);font-size:1.08rem;max-width:620px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:inherit;font-weight:700;font-size:1.05rem;border:none;cursor:pointer;text-decoration:none;border-radius:99px;padding:16px 28px;transition:transform .15s,filter .15s}
+.btn:hover{transform:translateY(-1px);filter:brightness(1.05)}
+.btn:focus-visible,.opt:focus-visible,.chk:focus-within{outline:3px solid var(--sun);outline-offset:2px}
+.btn-main{background:var(--brand);color:#fff;box-shadow:0 12px 28px rgba(11,79,124,.28)}
+.btn-wa{background:var(--wa);color:#fff;box-shadow:0 12px 28px rgba(31,168,85,.3)}
+.btn-wa svg{width:24px;height:24px;flex:none}
+.btn-block{width:100%}
+.link{font-weight:700;color:var(--brand);text-decoration:none;border-bottom:2px solid currentColor}
+
+/* Barra superior */
+.top{background:var(--paper);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:12px}
+.me{display:flex;align-items:center;gap:10px;min-width:0}
+.av{width:50px;height:50px;border-radius:50%;background:var(--brand);color:#fff;font-weight:800;display:grid;place-items:center;position:relative;overflow:hidden;flex:none}
+.av img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.me b{display:block;font-size:.98rem;line-height:1.1}
+.me small{color:var(--soft);font-size:.78rem}
+.ind{font-size:.72rem;color:var(--soft);text-align:right;line-height:1.25}
+.promo-top{background:var(--sun);color:var(--ink);text-align:center;font-size:.9rem;font-weight:600;padding:9px 16px}
+
+/* Portada */
+.hero{padding-block:32px 56px;background:radial-gradient(120% 80% at 100% 0,#d9ecf6 0,transparent 60%),var(--paper)}
+.hero .wrap{display:grid;gap:32px;align-items:center}
+.hero .wrap>div{min-width:0}
+@media(min-width:900px){.hero .wrap{grid-template-columns:1.05fr .95fr;gap:56px}.hero{padding-block:64px 88px}}
+.hero h1{font-size:clamp(2.4rem,9vw,4.1rem);margin-bottom:16px}
+.hero h1 em{font-style:normal;color:var(--brand);background:linear-gradient(transparent 62%,var(--sun-2) 62%)}
+.hero .lead{margin-bottom:24px}
+.hero .cta{display:flex;flex-wrap:wrap;gap:14px 22px;align-items:center}
+.proof{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:28px;max-width:520px}
+.proof div{border-left:3px solid var(--leaf);padding-left:10px}
+.proof b{display:block;font-family:var(--display);font-size:1.35rem;line-height:1.1}
+.proof small{color:var(--soft);font-size:.8rem;line-height:1.3;display:block}
+.photo{position:relative;border-radius:28px;overflow:hidden;aspect-ratio:4/5;max-width:440px;width:100%;margin:0 auto;background:linear-gradient(160deg,#cfe6f2,var(--brand));box-shadow:0 30px 70px rgba(11,79,124,.25)}
+.photowrap{margin:0}
+.picwrap{margin:0;display:flex;flex-direction:column;align-items:center}
+.picwrap .memoria{max-width:300px}
+.memoria{max-width:440px;margin:16px auto 0;text-align:center;font-style:italic;color:var(--soft);font-size:.95rem;line-height:1.5}
+.memoria span{font-style:normal;margin-right:4px}
+@media(max-width:899px){.memoria{max-width:360px}}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 8%}
+.photo .ph{position:absolute;inset:0;display:grid;place-items:center;text-align:center;color:#fff;padding:24px;font-weight:600}
+.photo .ph span{display:block;font-family:var(--display);font-size:5rem;line-height:1}
+.photo .stamp{position:absolute;left:14px;bottom:14px;right:14px;background:rgba(255,255,255,.96);border-radius:14px;padding:10px 14px;display:flex;gap:10px;align-items:center;font-size:.86rem;color:var(--ink)}
+.photo .stamp i{width:10px;height:10px;border-radius:50%;background:var(--wa);box-shadow:0 0 0 4px #d7f5e3;flex:none}
+@media(max-width:899px){.photo{aspect-ratio:1/1;max-width:360px}}
+
+/* Test */
+.test{background:var(--bg)}
+.panel{background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:22px;box-shadow:0 16px 40px rgba(13,34,51,.07);max-width:720px}
+@media(min-width:640px){.panel{padding:32px}}
+.panel .head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:16px}
+.meter{font-size:.85rem;color:var(--soft);font-weight:600}
+.chks{display:grid;gap:10px}
+@media(min-width:640px){.chks{grid-template-columns:1fr 1fr}}
+.chk{display:flex;gap:12px;align-items:center;border:2px solid var(--line);border-radius:14px;padding:14px;cursor:pointer;font-weight:600;transition:.15s;user-select:none}
+.chk input{position:absolute;opacity:0;width:1px;height:1px}
+.chk .box{width:24px;height:24px;border-radius:7px;border:2px solid var(--line);display:grid;place-items:center;flex:none;color:#fff;font-size:.85rem}
+.chk:has(input:checked){border-color:var(--brand);background:var(--brand-2)}
+.chk:has(input:checked) .box{background:var(--brand);border-color:var(--brand)}
+.chk:has(input:checked) .box::after{content:"✓"}
+.chk .e{font-size:1.3rem}
+.panel .go{margin-top:18px}
+.note{font-size:.8rem;color:var(--soft);margin-top:12px}
+.step{display:grid;gap:12px}
+.step .q{font-family:var(--display);font-size:1.35rem;line-height:1.2;font-weight:700}
+.dots{display:flex;gap:6px}
+.dots i{height:5px;flex:1;border-radius:9px;background:var(--line)}
+.dots i.on{background:var(--brand)}
+.opts{display:grid;gap:8px}
+.opt{font:inherit;font-weight:600;cursor:pointer;text-align:left;border:2px solid var(--line);background:var(--paper);border-radius:14px;padding:14px 16px;color:var(--ink)}
+.opt:hover{border-color:var(--brand);background:var(--brand-2)}
+.back{font:inherit;font-size:.88rem;background:none;border:none;color:var(--soft);cursor:pointer;justify-self:start;text-decoration:underline}
+.result{border-radius:16px;padding:18px;display:grid;gap:6px}
+.result.lv1{background:var(--leaf-2)} .result.lv2{background:var(--sun-2)} .result.lv3{background:#fde6dc}
+.result b.big{font-family:var(--display);font-size:1.5rem;line-height:1.15}
+.result .reco{font-weight:700;color:var(--brand)}
+.bar{height:10px;border-radius:9px;background:rgba(13,34,51,.1);overflow:hidden}
+.bar i{display:block;height:100%;border-radius:9px;background:var(--brand);transition:width .5s}
+.sum{color:var(--soft);font-size:.9rem}
+
+/* Cómo funciona */
+.how .grid{display:grid;gap:14px;margin-top:28px}
+@media(min-width:800px){.how .grid{grid-template-columns:repeat(3,1fr)}}
+.how .card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:24px;position:relative}
+.how .n{font-family:var(--display);font-weight:800;font-size:3rem;color:var(--brand-2);-webkit-text-stroke:2px var(--brand);line-height:1;margin-bottom:10px}
+.how p{color:var(--soft);font-size:.96rem;margin-top:6px}
+.how .src{font-size:.82rem;color:var(--soft);margin-top:18px}
+
+/* Precio por día */
+.price{background:var(--paper)}
+.price .wrap{display:grid;gap:32px}
+@media(min-width:900px){.price .wrap{grid-template-columns:.9fr 1.1fr;align-items:start}}
+.anchor{background:linear-gradient(150deg,#1478c8,#0b56a0);color:#fff;border-radius:24px;padding:28px}
+.anchor small{color:#d3e8f8;font-weight:600;text-transform:uppercase;letter-spacing:.08em;font-size:.75rem}
+.anchor .day{font-family:var(--display);font-size:clamp(3rem,12vw,4.6rem);font-weight:800;line-height:1;margin:6px 0}
+.anchor .day span{font-size:.4em;color:#d3e8f8}
+.anchor p{color:#eaf4fc}
+.anchor{position:relative}
+.abox{float:right;width:110px;height:110px;margin:0 0 10px 14px;border-radius:16px;box-shadow:0 10px 26px rgba(0,0,0,.25);transform:rotate(-4deg)}
+@media(max-width:420px){.abox{width:88px;height:88px}.pn .box{width:60px;height:60px}}
+.list{border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:1fr auto;gap:12px;padding:14px 0;border-bottom:1px solid var(--line);align-items:center}
+.row>div{min-width:0}
+.pref{background:linear-gradient(160deg,#0b4f7c,#081a27);color:#fff}
+.pref-head{text-align:center;max-width:680px;margin:0 auto 36px}
+.pref-tag{display:inline-block;background:var(--sun);color:#3a2600;font-weight:800;font-size:.85rem;padding:6px 14px;border-radius:99px}
+.pref h2{color:#fff;font-size:clamp(2rem,6vw,3rem);margin:14px 0 10px}
+.pref h2 em{font-style:normal;color:var(--sun)}
+.pref-head p{color:#cfe2ee;font-size:1.1rem;margin:0}
+.pk-grid{display:grid;gap:26px}
+@media(min-width:900px){.pk-grid{grid-template-columns:repeat(3,1fr);align-items:stretch}}
+.pk{position:relative;background:#fff;color:var(--ink);border-radius:24px;padding:26px 22px 22px;display:flex;flex-direction:column;box-shadow:0 20px 50px rgba(0,0,0,.25)}
+.pk-hot{outline:3px solid var(--sun)}
+.pk-top{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--sun);color:#3a2600;font-weight:800;font-size:.75rem;letter-spacing:.06em;padding:5px 14px;border-radius:99px;white-space:nowrap}
+.pk-ship{position:absolute;top:14px;right:14px;width:64px;height:64px;border-radius:50%;background:#e8317f;color:#fff;font-weight:800;font-size:.72rem;line-height:1.1;display:flex;align-items:center;justify-content:center;text-align:center;text-transform:uppercase;transform:rotate(10deg);box-shadow:0 6px 16px rgba(232,49,127,.4)}
+.pk-img{display:flex;justify-content:center;gap:6px;margin:4px 0 14px}
+.pk-img img{width:110px;height:110px;object-fit:contain}
+.pk h3{font-size:1.3rem;margin:0}
+.pk-inc{color:var(--soft);margin:4px 0 14px;font-size:.95rem}
+.pk-was{margin:0;color:var(--soft);font-size:.95rem}
+.pk-was s{color:#c0392b}
+.pk-now{display:flex;flex-direction:column;gap:4px;margin:2px 0}
+.pk-now b{font-family:var(--display);font-size:2.6rem;line-height:1;color:var(--brand)}
+.pk-now span{font-weight:700;color:var(--leaf)}
+.pk-save{display:inline-block;align-self:flex-start;background:var(--leaf-2);color:var(--leaf);font-weight:800;padding:4px 12px;border-radius:99px;margin:8px 0 6px}
+.pk-alt{color:var(--soft);font-size:.88rem;margin:0 0 18px}
+.pk .btn{margin-top:auto}
+.pk-flyer{margin:28px auto 0;max-width:640px;text-align:center}
+.pk-flyer summary{cursor:pointer;color:#cfe2ee;text-decoration:underline;font-weight:600}
+.pk-flyer img{width:100%;height:auto;border-radius:14px;margin-top:14px}
+.pk-note{text-align:center;color:#9fb6c6;font-size:.8rem;margin:18px auto 0;max-width:640px}
+
+.pn{display:flex;align-items:center;gap:12px}
+.pn .box{width:72px;height:72px;box-shadow:0 4px 14px rgba(13,34,51,.10);object-fit:contain;flex:none;border-radius:10px;background:#fff}
+.row b{font-size:1.02rem}
+.row small{display:block;color:var(--soft);font-size:.86rem}
+.row .bs{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.row .bs b{font-family:var(--display);font-size:1.2rem;display:block}
+.row .bs small{font-size:.8rem}
+.tagpop{display:inline-block;background:var(--sun);color:var(--ink);font-size:.68rem;font-weight:800;letter-spacing:.06em;padding:2px 8px;border-radius:99px;margin-left:6px;vertical-align:2px}
+.promo{display:flex;gap:12px;align-items:center;background:var(--sun-2);border:1px solid #f1d58a;border-radius:14px;padding:14px 16px;margin-bottom:18px;font-weight:600}
+
+/* Compromiso + sobre mí */
+.promise .wrap{display:grid;gap:32px;align-items:center}
+@media(min-width:860px){.promise .wrap{grid-template-columns:300px 1fr}}
+.pic{width:220px;height:220px;border-radius:50%;overflow:hidden;position:relative;background:linear-gradient(160deg,#cfe6f2,var(--brand));color:#fff;display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:5rem;margin:0 auto;box-shadow:0 20px 50px rgba(11,79,124,.22)}
+.pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.promise .lead{margin-bottom:18px}
+.vows{display:grid;gap:12px;margin-bottom:18px}
+.vows div{display:flex;gap:12px;align-items:flex-start}
+.vows div::before{content:"✓";flex:none;width:26px;height:26px;border-radius:50%;background:var(--leaf);color:#fff;display:grid;place-items:center;font-weight:800;font-size:.85rem;margin-top:1px}
+.indep{font-size:.86rem;background:var(--brand-2);border-radius:12px;padding:10px 14px;display:inline-block}
+
+/* Negocio */
+.biz{background:var(--night);color:#cfdde7}
+.biz h2{color:#fff}
+.biz .eyebrow{color:var(--sun)}
+.biz .lead{color:#9fb6c6}
+.intl{background:var(--brand-2)}
+.intl-box{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.intl-globe{font-size:clamp(4rem,14vw,6rem);line-height:1;flex:none}
+.intl-text{flex:1 1 300px;min-width:0}
+.intl-tag{display:inline-block;background:var(--brand);color:#fff;font-weight:800;font-size:.8rem;letter-spacing:.05em;text-transform:uppercase;padding:5px 14px;border-radius:99px}
+.intl h2{margin:10px 0 8px}
+.intl p{color:var(--soft);margin:0 0 16px;max-width:60ch}
+
+.vid{margin:44px auto 0;max-width:820px;text-align:center}
+.vid-tag{display:inline-block;background:var(--brand);color:#fff;font-weight:800;font-size:.85rem;padding:6px 14px;border-radius:99px}
+.vid h3{font-size:clamp(1.4rem,4.5vw,2rem);margin:12px 0 18px}
+.vid-box{position:relative;border-radius:22px;overflow:hidden;box-shadow:0 24px 60px rgba(11,79,124,.28);background:#000;aspect-ratio:16/9}
+.vid-box video{display:block;width:100%;height:100%;object-fit:cover}
+.vid-play{position:absolute;inset:0;margin:auto;width:84px;height:84px;border-radius:50%;border:0;background:var(--wa);cursor:pointer;box-shadow:0 0 0 10px rgba(31,168,85,.3);animation:bizpulse 2.4s ease-in-out infinite}
+.vid-play span{display:block;margin-left:6px;width:0;height:0;border-style:solid;border-width:16px 0 16px 26px;border-color:transparent transparent transparent #fff;margin:auto;transform:translateX(4px)}
+.vid-cta{margin-top:14px;color:var(--soft)}
+.vid-err{position:absolute;inset:auto 0 0 0;margin:0;padding:10px;background:rgba(0,0,0,.8);color:#fff;font-size:.9rem}
+.vid-cta a{color:var(--leaf);font-weight:700}
+.biz .wrap.vidwrap{display:block;margin-top:56px}
+.biz .vid h3{color:#fff}
+.biz .vid-cta{color:#9fb6c6}
+.biz .vid-cta a{color:#5fd68f}
+.biz .vid-tag{background:var(--sun);color:#3a2600}
+
+.biz-badge{display:inline-block;background:linear-gradient(90deg,#f2b632,#ffd76a);color:#2a1c00;font-family:var(--display);font-weight:800;text-transform:uppercase;letter-spacing:.04em;font-size:clamp(1.15rem,4.6vw,1.6rem);padding:10px 22px;border-radius:99px;box-shadow:0 0 0 6px rgba(242,182,50,.18),0 10px 30px rgba(242,182,50,.35);margin-bottom:14px;animation:bizpulse 2.4s ease-in-out infinite}
+@keyframes bizpulse{50%{box-shadow:0 0 0 12px rgba(242,182,50,.08),0 10px 30px rgba(242,182,50,.45)}}
+@media(prefers-reduced-motion:reduce){.biz-badge{animation:none}}
+
+.biz .wrap.kitwrap{display:block;margin-top:48px}
+.kit{background:#fff;color:var(--ink);border-radius:28px;padding:30px 22px;box-shadow:0 24px 60px rgba(0,0,0,.35);outline:3px solid var(--sun)}
+.kit-tag{display:inline-block;background:var(--sun);color:#3a2600;font-weight:800;font-size:.85rem;padding:6px 14px;border-radius:99px}
+.kit h3{font-size:clamp(1.6rem,5vw,2.3rem);margin:12px 0 18px}
+.kit-body{display:grid;gap:22px}
+@media(min-width:900px){.kit{padding:40px}.kit-body{grid-template-columns:1.1fr 1fr;align-items:center}}
+.kit-pics{position:relative}
+.kit-pics>img{width:100%;height:auto;display:block}
+.kit-gift{position:absolute;right:0;bottom:-10px;width:36%;margin:0;background:#fff;border-radius:14px;padding:6px;box-shadow:0 8px 24px rgba(13,34,51,.18);transform:rotate(4deg)}
+.kit-gift img{width:100%;display:block;border-radius:10px}
+.kit-gift figcaption{font-weight:800;font-size:.8rem;text-align:center;color:#e8317f;padding-top:4px}
+.kit-inc{margin:0 0 12px;color:var(--soft)}
+.kit-was{margin:0;color:var(--soft)}
+.kit-was s{color:#c0392b}
+.kit-price{font-family:var(--display);font-weight:800;font-size:3rem;line-height:1;color:var(--brand);margin:4px 0 14px}
+.kit-why{list-style:none;padding:0;margin:0 0 18px;display:grid;gap:8px}
+.kit-why li{padding-left:28px;position:relative}
+.kit-why li::before{content:"✓";position:absolute;left:0;top:0;width:20px;height:20px;border-radius:50%;background:var(--leaf);color:#fff;font-size:.75rem;font-weight:800;display:flex;align-items:center;justify-content:center}
+.bono{margin-top:30px;border-top:1px solid var(--line);padding-top:24px}
+.bono h4{font-family:var(--display);font-size:1.3rem;margin:0 0 4px}
+.bono>p{color:var(--soft);margin:0 0 14px}
+.bono table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.bono th{background:var(--brand);color:#fff;font-size:.8rem;text-transform:uppercase;letter-spacing:.04em;padding:10px 8px;text-align:center}
+.bono th:first-child{border-radius:10px 0 0 0}.bono th:last-child{border-radius:0 10px 0 0}
+.bono td{text-align:center;padding:10px 6px;white-space:nowrap;border-bottom:1px solid var(--line)}
+.bono td:last-child{background:var(--brand-2);color:var(--brand);font-size:1.1rem}
+.bono .fine{font-size:.78rem;color:var(--soft);margin-top:10px}
+
+.biz .wrap{display:grid;gap:32px}
+@media(min-width:900px){.biz .wrap{grid-template-columns:1fr 1fr;align-items:center}}
+.calc{background:var(--night-2);border:1px solid #1d3d55;border-radius:24px;padding:24px}
+.calc label{display:flex;justify-content:space-between;font-weight:600;color:#fff;margin-bottom:12px}
+.calc label b{font-family:var(--display);font-size:1.4rem}
+.calc input[type=range]{width:100%;accent-color:var(--sun);height:28px}
+.calc .out{margin-top:16px;padding-top:16px;border-top:1px solid #1d3d55}
+.calc .out small{color:#9fb6c6;font-size:.82rem}
+.calc .out b{display:block;font-family:var(--display);font-size:clamp(2.2rem,8vw,3rem);color:var(--sun);line-height:1.1;font-variant-numeric:tabular-nums}
+.free{margin-top:12px;border-radius:12px;padding:10px 12px;font-weight:700;font-size:.95rem}
+.free.ok{background:rgba(31,168,85,.18);color:#7ee2a5}
+.free.no{background:rgba(255,255,255,.06);color:#cfdde7}
+.hint{color:var(--sun);font-weight:700;margin-top:10px}
+.calc .fine{font-size:.76rem;color:#89a1b2;margin-top:10px}
+.biz ol{padding-left:22px;display:grid;gap:8px;margin:18px 0 22px;color:#e2ecf2}
+.biz .panel{background:var(--paper);color:var(--ink);margin-top:18px}
+
+/* Preguntas */
+.faq .wrap>*{max-width:740px}
+details{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;font-weight:700;padding:18px 0;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--brand);font-size:1.5rem;line-height:1}
+details[open] summary::after{content:"–"}
+details p{color:var(--soft);padding-bottom:18px}
+
+/* Cierre y pie */
+.final{background:var(--brand);color:#fff;text-align:center}
+.final h2{color:#fff}
+.final p{color:#cfe3f0;margin:0 auto 24px;max-width:520px}
+.final .btn{background:#fff;color:var(--brand)}
+.final .alt{display:block;margin-top:18px;color:#cfe3f0;font-size:.95rem}
+.final .alt a{color:#fff;font-weight:700}
+footer{background:var(--night);color:#8fa6b6;font-size:.8rem;padding-block:28px;text-align:center;line-height:1.6}
+footer b{color:#fff}
+
+/* Botón fijo en celular */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:20;background:rgba(255,255,255,.97);border-top:1px solid var(--line);padding:10px max(16px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));transition:transform .25s}
+.sticky.off{transform:translateY(110%)}
+.sticky a{display:flex;justify-content:center;align-items:center;gap:8px;background:var(--brand);color:#fff;font-weight:700;text-decoration:none;border-radius:99px;padding:14px}
+@media(min-width:900px){.sticky{display:none}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.47-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.59-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.28-.2-.57-.35m-5.42 7.4h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.43 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.17-3.48-8.41z"/></symbol></svg>
+
+<!-- PROMO DEL MES: borra el atributo hidden y escribe la promoción vigente -->
+<div class="promo-top" hidden>🔥 Promo de noviembre: ESCRIBE AQUÍ LA PROMOCIÓN</div>
+
+<div class="top">
+  <div class="wrap">
+    <div class="me">
+      <span class="av">Y<img src="img/yunior-dos.jpg" alt="" onerror="this.remove()"></span>
+      <span><b>Yunior Figueredo</b><small>Immunocal · Cochabamba</small></span>
+    </div>
+    <span class="ind">Distribuidor<br>Independiente</span>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Entrega a domicilio en Cochabamba</span>
+      <h1>Tu cuerpo ya sabe defenderse. <em>Dale con qué.</em></h1>
+      <p class="lead">Immunocal ayuda a tu cuerpo a producir su propio glutatión, el antioxidante que tus defensas usan todos los días. Original, en la puerta de tu casa y con alguien que te acompaña.</p>
+      <div class="cta">
+        <a class="btn btn-main" href="#test">Haz el test de 1 minuto</a>
+        <a class="link" href="#negocio">¿Cómo tomarlo gratis?</a>
+      </div>
+      <div class="proof">
+        <div><b>45+</b><small>años de investigación</small></div>
+        <div><b>Bs 27</b><small>al día, desde</small></div>
+        <div><b>24–48 h</b><small>entrega en Cochabamba</small></div>
+      </div>
+    </div>
+    <figure class="photowrap">
+    <div class="photo">
+      <div class="ph"><div><span>Y</span>Aquí va tu foto</div></div>
+      <img src="img/yunior-producto.jpg" alt="Yunior Figueredo junto a su esposa" onerror="this.remove()">
+      <div class="stamp"><i></i><div><b>Te respondo yo, no un robot</b><br>WhatsApp 77424481</div></div>
+    </div>
+    </figure>
+  </div>
+</header>
+
+<section class="test" id="test">
+  <div class="wrap">
+    <span class="eyebrow">Test de 1 minuto</span>
+    <h2>¿Cuánto le exige tu estilo de vida a tu glutatión?</h2>
+    <p class="lead" style="margin-bottom:24px">Marca lo que va contigo. Al final te digo qué producto te conviene y te lo explico por WhatsApp.</p>
+
+    <div class="panel" aria-live="polite">
+      <div id="t0">
+        <div class="head"><b>Marca todo lo que aplique</b><span class="meter" id="cnt">0 de 6</span></div>
+        <div class="chks" id="chks"></div>
+        <button class="btn btn-main btn-block go" type="button" id="seeResult">Ver mi resultado</button>
+        <p class="note">Test orientativo sobre hábitos. No es un diagnóstico médico.</p>
+      </div>
+      <div class="step" id="tq" hidden>
+        <div class="dots" id="tdots"></div>
+        <div class="result" id="res"></div>
+        <p class="q" id="tqText"></p>
+        <div class="opts" id="tqOpts"></div>
+        <button class="back" type="button" id="tback">Volver</button>
+      </div>
+      <div class="step" id="td" hidden>
+        <p class="q">¡Listo! Envíame tu resultado y te asesoro.</p>
+        <p class="sum" id="tsum"></p>
+        <a class="btn btn-wa btn-block" id="twa" href="https://wa.me/59177424481" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Enviar por WhatsApp</a>
+        <button class="back" type="button" id="trestart">Hacer el test de nuevo</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="how">
+  <div class="wrap">
+    <span class="eyebrow">Cómo funciona</span>
+    <h2>No te damos glutatión. Ayudamos a tu cuerpo a fabricarlo.</h2>
+    <p class="lead">El glutatión lo produce tu propio cuerpo, pero con la edad, el estrés y la contaminación produce menos. Immunocal le entrega los "ladrillos" que necesita.</p>
+    <div class="grid">
+      <div class="card"><div class="n">1</div><h3>Tomas un sobre al día</h3><p>Lo mezclas con agua fría, jugo o yogur. Sin licuar ni calentar.</p></div>
+      <div class="card"><div class="n">2</div><h3>Tu cuerpo recibe los precursores</h3><p>Proteína de suero no desnaturalizada, rica en cisteína, el ingrediente clave del glutatión.</p></div>
+      <div class="card"><div class="n">3</div><h3>Produce su propio glutatión</h3><p>Apoyas tus defensas, tu recuperación y un envejecimiento saludable.</p></div>
+    </div>
+    <p class="src">Immunocal fue desarrollado a partir de investigaciones en la Universidad McGill (Canadá).</p>
+    <!--VIDEO-->
+    <div class="vid">
+      <span class="vid-tag">▶ Video de 2 minutos</span>
+      <h3>La ciencia y la historia detrás de Immunocal</h3>
+      <div class="vid-box">
+        <video id="vidEl" controls preload="none" playsinline poster="img/video-poster.jpg" src="video/immunotec.mp4"></video>
+        <button class="vid-play" type="button" id="vidPlay" aria-label="Reproducir video"><span></span></button>
+      </div>
+      <p class="vid-cta">¿Te quedó alguna duda? <a href="https://wa.me/59177424481?text=Hola%20Yunior%2C%20vi%20el%20video%20de%20Immunocal%20en%20tu%20p%C3%A1gina%20y%20quiero%20saber%20m%C3%A1s." target="_blank" rel="noopener">Pregúntame por WhatsApp</a></p>
+    </div>
+    <!--/VIDEO-->
+  </div>
+</section>
+
+<section class="price" id="precios">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Precio real</span>
+      <h2>Cuidarte cuesta menos que un café en la calle</h2>
+      <div class="anchor">
+        <img class="abox" src="img/caja-immunocal.jpg" alt="Caja de Immunocal" onerror="this.remove()">
+        <small>Immunocal, caja de 30 sobres</small>
+        <div class="day">Bs 27 <span>al día</span></div>
+        <p>Bs 818 la caja, que te dura un mes completo. Y te la llevo a tu casa en Cochabamba.</p>
+      </div>
+    </div>
+    <div>
+      <!-- PROMO DEL MES: borra el atributo hidden y escribe la promoción vigente -->
+      <div class="promo" hidden>🔥 <span>ESCRIBE AQUÍ LA PROMOCIÓN DEL MES</span></div>
+      <div class="list">
+        <div class="row"><div class="pn"><img class="box" src="img/caja-immunocal.jpg" alt="Caja de Immunocal" loading="lazy" onerror="this.remove()"><div><b>Immunocal</b><small>El original. Para empezar a cuidarte.</small></div></div><div class="bs"><b>Bs 818</b><small>Bs 27 al día</small></div></div>
+        <div class="row"><div class="pn"><img class="box" src="img/caja-platinum.jpg" alt="Caja de Immunocal Platinum" loading="lazy" onerror="this.remove()"><div><b>Immunocal Platinum <span class="tagpop">MÁS PEDIDO</span></b><small>Más de 40 años o personas activas.</small></div></div><div class="bs"><b>Bs 1.180</b><small>Bs 39 al día</small></div></div>
+        <div class="row"><div class="pn"><img class="box" src="img/caja-optimizer.jpg" alt="Caja de Optimizer" loading="lazy" onerror="this.remove()"><div><b>Optimizer</b><small>50+ fitonutrientes. Combina con Immunocal.</small></div></div><div class="bs"><b>Bs 606</b></div></div>
+        <div class="row"><div class="pn"><img class="box" src="img/caja-performance.jpg" alt="Caja de Optimizer Performance" loading="lazy" onerror="this.remove()"><div><b>Optimizer Performance</b><small>Energía para personas activas.</small></div></div><div class="bs"><b>Bs 389</b></div></div>
+        <div class="row"><div class="pn"><img class="box" src="img/caja-cafe.jpg" alt="Caja de Café Immunotec" loading="lazy" onerror="this.remove()"><div><b>Café Immunotec</b><small>Para tu rutina diaria.</small></div></div><div class="bs"><b>Bs 450</b></div></div>
+      </div>
+      <p class="note">Precios de referencia de Immunotec Bolivia. Si lo vas a tomar todos los meses, como distribuidor pagas menos: pregúntame cómo.</p>
+    </div>
+  </div>
+</section>
+
+<section class="pref" id="preferente">
+  <div class="wrap">
+    <div class="pref-head">
+      <span class="pref-tag">🎁 Registro gratuito</span>
+      <h2>Regístrate gratis y paga <em>hasta 25% menos</em></h2>
+      <p>Como Cliente Preferente accedes a paquetes con mejor descuento y <b>envío gratis</b>. Yo te registro en minutos.</p>
+    </div>
+    <div class="pk-grid">
+        <article class="pk">
+          <span class="pk-ship">Envío<br>gratis</span>
+          <div class="pk-img"><img src="img/caja-immunocal.jpg" alt="" loading="lazy" onerror="this.remove()"><img src="img/caja-optimizer.jpg" alt="" loading="lazy" onerror="this.remove()"></div>
+          <h3>Paquete Mejor Nutrición</h3>
+          <p class="pk-inc">1 Immunocal + 1 Optimizer</p>
+          <p class="pk-was">Precio público <s>Bs 1.424</s></p>
+          <div class="pk-now"><b>Bs 1.068</b><span>con 25% de dto.</span></div>
+          <p class="pk-save">Ahorras Bs 356</p>
+          <p class="pk-alt">o Bs 1.281,60 con 10% de dto.</p>
+          <a class="btn btn-wa btn-block" href="https://wa.me/59177424481?text=Hola%20Yunior%2C%20quiero%20registrarme%20gratis%20como%20Cliente%20Preferente%20y%20pedir%20el%20Paquete%20Mejor%20Nutrici%C3%B3n%20%28Bs%201.068%20con%2025%25%20de%20descuento%29.%20%C2%BFMe%20ayudas%3F" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Lo quiero</a>
+        </article>
+        <article class="pk">
+          <span class="pk-ship">Envío<br>gratis</span>
+          <div class="pk-img"><img src="img/caja-immunocal.jpg" alt="" loading="lazy" onerror="this.remove()"><img src="img/caja-immunocal.jpg" alt="" loading="lazy" onerror="this.remove()"></div>
+          <h3>Paquete Salud Immunocal</h3>
+          <p class="pk-inc">2 Immunocal</p>
+          <p class="pk-was">Precio público <s>Bs 1.636</s></p>
+          <div class="pk-now"><b>Bs 1.227</b><span>con 25% de dto.</span></div>
+          <p class="pk-save">Ahorras Bs 409</p>
+          <p class="pk-alt">o Bs 1.472,40 con 10% de dto.</p>
+          <a class="btn btn-wa btn-block" href="https://wa.me/59177424481?text=Hola%20Yunior%2C%20quiero%20registrarme%20gratis%20como%20Cliente%20Preferente%20y%20pedir%20el%20Paquete%20Salud%20Immunocal%20%28Bs%201.227%20con%2025%25%20de%20descuento%29.%20%C2%BFMe%20ayudas%3F" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Lo quiero</a>
+        </article>
+        <article class="pk pk-hot"><span class="pk-top">MAYOR AHORRO</span>
+          <span class="pk-ship">Envío<br>gratis</span>
+          <div class="pk-img"><img src="img/caja-platinum.jpg" alt="" loading="lazy" onerror="this.remove()"><img src="img/caja-optimizer.jpg" alt="" loading="lazy" onerror="this.remove()"></div>
+          <h3>Paquete Mejor Bienestar</h3>
+          <p class="pk-inc">1 Immunocal Platinum + 1 Optimizer</p>
+          <p class="pk-was">Precio público <s>Bs 1.786</s></p>
+          <div class="pk-now"><b>Bs 1.339,50</b><span>con 25% de dto.</span></div>
+          <p class="pk-save">Ahorras Bs 446,50</p>
+          <p class="pk-alt">o Bs 1.607,40 con 10% de dto.</p>
+          <a class="btn btn-wa btn-block" href="https://wa.me/59177424481?text=Hola%20Yunior%2C%20quiero%20registrarme%20gratis%20como%20Cliente%20Preferente%20y%20pedir%20el%20Paquete%20Mejor%20Bienestar%20%28Bs%201.339%2C50%20con%2025%25%20de%20descuento%29.%20%C2%BFMe%20ayudas%3F" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Lo quiero</a>
+        </article>
+    </div>
+    <details class="pk-flyer"><summary>Ver folleto oficial de Immunotec</summary><img src="img/paquetes-clientes.jpg" alt="Folleto oficial Paquetes Clientes de Immunotec Bolivia" loading="lazy" onerror="this.remove()"></details>
+    <p class="pk-note">Precios del folleto oficial de Immunotec Bolivia (actualizado en septiembre de 2026). Paquetes exclusivos para clientes residentes en Bolivia, sujetos a cambio y hasta agotar existencias.</p>
+  </div>
+</section>
+
+<!--
+  TESTIMONIOS (activar solo con testimonios REALES y con permiso de cada cliente).
+  La prueba social es lo que más vende: 3 fotos o capturas de WhatsApp de clientes reales.
+-->
+
+<section class="promise">
+  <div class="wrap">
+    <figure class="picwrap">
+      <div class="pic">Y<img src="img/yunior-dos.jpg" alt="Yunior Figueredo junto a su esposa" onerror="this.remove()"></div>
+      <figcaption class="memoria"><span>🕊️</span> A la memoria de mi esposa, <b>Yugmila Rodríguez Espinosa</b>, que empezó este camino con Immunotec. Hoy lo continúo en su honor, con el mismo compromiso.</figcaption>
+    </figure>
+    <div>
+      <span class="eyebrow">Mi compromiso contigo</span>
+      <h2>No te vendo una caja. Te acompaño.</h2>
+      <!-- PENDIENTE: cambia este párrafo por tu historia real en 2 o 3 frases -->
+      <p class="lead">Soy Yunior Figueredo y vivo en Cochabamba. Cuando me compras, tienes a alguien de confianza a quien preguntarle, no un número que nunca contesta.</p>
+      <div class="vows">
+        <div><span><b>Te explico cómo tomarlo</b> desde el primer día, paso a paso.</span></div>
+        <div><span><b>Te escribo a los 15 días</b> para ver cómo te va.</span></div>
+        <div><span><b>Te lo llevo a tu casa</b> o a tu trabajo, cuando te quede bien.</span></div>
+        <div><span><b>Solo producto original</b>, sellado de fábrica.</span></div>
+      </div>
+      <p class="indep">Soy Distribuidor Independiente de Immunotec. Esta es mi página personal, no la página oficial de la empresa.</p>
+    </div>
+  </div>
+</section>
+
+<section class="biz" id="negocio">
+  <div class="wrap">
+    <div>
+      <span class="biz-badge">💼 Oportunidad de negocio</span>
+      <h2>¿Y si tu Immunocal te saliera gratis?</h2>
+      <p class="lead">Hay una forma, y no es una promoción. Mueve la barra y descúbrelo tú mismo.</p>
+      <ol>
+        <li>Conversamos 15 minutos, sin compromiso.</li>
+        <li>Eliges tu paquete de inicio.</li>
+        <li>Te inscribo en mi equipo y empezamos juntos.</li>
+      </ol>
+      <button class="btn btn-wa" type="button" id="bizStart"><svg><use href="#wa"/></svg>Quiero mi charla de 15 min</button>
+    </div>
+    <div>
+      <div class="calc">
+        <label for="clients">¿Cuántos clientes al mes? <b id="cN">3</b></label>
+        <input type="range" id="clients" min="1" max="30" value="3">
+        <p class="hint" id="cHint">👆 Mueve la barra para descubrirlo</p>
+        <div class="out" id="cOutBox" hidden>
+          <small>Ganancia estimada al mes, solo por venta directa</small>
+          <b id="cOut">Bs 735</b>
+          <div class="free" id="cFree"></div>
+          <p class="fine">Ejemplo: cada cliente compra 1 Immunocal (Bs 818); tu ganancia es la diferencia con tu precio de distribuidor, unos Bs 245, y tu propia caja te cuesta unos Bs 573. No incluye bonos de equipo. Los ingresos dependen del esfuerzo de cada persona y no están garantizados.</p>
+        </div>
+      </div>
+      <div class="panel" id="bizFlow" aria-live="polite" hidden>
+        <div class="step" id="bq">
+          <div class="dots" id="bdots"></div>
+          <p class="q" id="bqText"></p>
+          <div class="opts" id="bqOpts"></div>
+          <button class="back" type="button" id="bback">Volver</button>
+        </div>
+        <div class="step" id="bd" hidden>
+          <p class="q">¡Perfecto! Envíame el mensaje y coordinamos.</p>
+          <p class="sum" id="bsum"></p>
+          <a class="btn btn-wa btn-block" id="bwa" href="https://wa.me/59177424481" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Enviar por WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--VIDEO2-->
+  <div class="wrap vidwrap">
+    <div class="vid">
+      <span class="vid-tag">▶ Video de 3 minutos</span>
+      <h3>Conoce la empresa y el equipo con el que trabajarías</h3>
+      <div class="vid-box">
+        <video class="vid-el" controls preload="none" playsinline poster="img/video2-poster.jpg" src="video/negocio.mp4"></video>
+        <button class="vid-play" type="button" aria-label="Reproducir video"><span></span></button>
+      </div>
+      <p class="vid-cta">¿Te imaginas en este equipo? <a href="https://wa.me/59177424481?text=Hola%20Yunior%2C%20vi%20el%20video%20de%20Immunotec%20en%20tu%20p%C3%A1gina%20y%20quiero%20saber%20c%C3%B3mo%20ser%20parte%20del%20equipo." target="_blank" rel="noopener">Escríbeme y conversamos</a></p>
+    </div>
+  </div>
+  <!--/VIDEO2-->
+  <div class="wrap kitwrap">
+    <article class="kit">
+      <span class="kit-tag">⭐ Máximo descuento: 30%</span>
+      <h3>Afíliate con el Kit de inicio Xplora</h3>
+      <div class="kit-body">
+        <div class="kit-pics">
+          <img src="img/kit-productos.jpg" alt="Kit Xplora: 2 Immunocal, 2 Immunocal Platinum, 1 Optimizer y 2 vasos mezcladores" loading="lazy" onerror="this.remove()">
+          <figure class="kit-gift"><img src="img/kit-mochila.jpg" alt="Mochila Immunotec de regalo" loading="lazy" onerror="this.remove()"><figcaption>🎁 Mochila de regalo</figcaption></figure>
+        </div>
+        <div class="kit-info">
+          <p class="kit-inc"><b>5 cajas:</b> 2 Immunocal, 2 Immunocal Platinum y 1 Optimizer R&amp;V, más 2 vasos mezcladores y una mochila de regalo.</p>
+          <p class="kit-was">En precio público: <s>Bs 4.602</s></p>
+          <p class="kit-price">Bs 3.492</p>
+          <ul class="kit-why">
+            <li><b>Compras siempre con 30% de descuento</b>, el máximo.</li>
+            <li><b>Calificas al Bono de Desarrollo de Negocios</b>: puedes autofinanciarte inscribiendo a otros distribuidores.</li>
+          </ul>
+          <a class="btn btn-wa btn-block" href="https://wa.me/59177424481?text=Hola%20Yunior%2C%20quiero%20afiliarme%20con%20el%20Kit%20de%20inicio%20Xplora%20%28Bs%203.492%29%20y%20el%2030%25%20de%20descuento.%20%C2%BFMe%20explicas%20los%20pasos%3F" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Quiero mi Kit de inicio</a>
+        </div>
+      </div>
+      <div class="bono">
+        <h4>Bono de Desarrollo de Negocios</h4>
+        <p>Ejemplo de Immunotec: lo que recibes en un mes si cada distribuidor que inscribes directamente compra el Kit Xplora.</p>
+        <table><thead><tr><th>Inscritos en el mes</th><th>Comisión</th><th>Total del mes</th></tr></thead><tbody><tr><td>1</td><td>10%</td><td><b>Bs 202,20</b></td></tr><tr><td>2</td><td>15%</td><td><b>Bs 660,60</b></td></tr><tr><td>3</td><td>25%</td><td><b>Bs 1.651,50</b></td></tr><tr><td>5</td><td>25%</td><td><b>Bs 2.752,50</b></td></tr><tr><td>10</td><td>25%</td><td><b>Bs 5.505</b></td></tr></tbody></table>
+        <p class="fine">* Ejemplo referencial, depende de tu trabajo.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="intl" id="internacional">
+  <div class="wrap">
+    <div class="intl-box">
+      <div class="intl-globe" aria-hidden="true">🌎</div>
+      <div class="intl-text">
+        <span class="intl-tag">Empresa internacional</span>
+        <h2>¿Vives fuera de Bolivia? También te ayudo</h2>
+        <p>Immunotec está presente en 18 países. Dime dónde vives y verifico contigo que la empresa esté en tu país, para que empieces a tomar el producto allá y, si quieres, también hagas el negocio desde tu país.</p>
+        <a class="btn btn-wa" href="https://wa.me/59177424481?text=Hola%20Yunior%2C%20vivo%20fuera%20de%20Bolivia%2C%20en%20el%20pa%C3%ADs%3A%20____.%20Me%20interesa%20Immunocal.%20%C2%BFMe%20ayudas%20a%20ver%20si%20Immunotec%20est%C3%A1%20en%20mi%20pa%C3%ADs%3F" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Vivo fuera de Bolivia</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap">
+    <span class="eyebrow">Dudas frecuentes</span>
+    <h2>Lo que más me preguntan</h2>
+    <details><summary>¿No es caro?</summary><p>Son Bs 27 al día, menos que un café o un refresco en la calle. Y si lo vas a tomar todos los meses, como distribuidor lo pagas más barato.</p></details>
+    <details><summary>¿Por qué no tomar glutatión en cápsulas?</summary><p>Immunocal no te da glutatión ya hecho: le entrega a tu cuerpo los precursores para que él mismo lo produzca, que es como funciona de forma natural.</p></details>
+    <details><summary>¿De verdad puedo tomarlo gratis?</summary><p>Sí, si recomiendas. Como distribuidor ganas una parte de cada caja que vendes. Con unos 3 clientes al mes esa ganancia cubre tu propia caja, así que tu consumo te sale gratis. Si no vendes, pagas tu caja a precio de distribuidor, que igual es más barato que el precio público.</p></details>
+    <details><summary>¿Es original?</summary><p>Sí. Todos los productos vienen sellados de fábrica por Immunotec.</p></details>
+    <details><summary>¿Cómo pago y cuánto tarda?</summary><p>Con QR, transferencia o efectivo al recibir. Coordinamos la entrega en Cochabamba por WhatsApp, normalmente en 24 a 48 horas.</p></details>
+    <details><summary>¿Lo puedo tomar si tomo medicamentos?</summary><p>Es un suplemento alimenticio, no un medicamento. Si tienes una condición de salud, estás embarazada o tomas medicamentos, consulta antes con tu médico.</p></details>
+    <details><summary>¿Vivo fuera de Bolivia, puedo comprar o hacer el negocio?</summary><p>Sí, Immunotec es una empresa internacional presente en 18 países. Escríbeme, verificamos juntos que esté en tu país y te ayudo a empezar allá, como cliente o como distribuidor.</p></details>
+    <details><summary>¿Cuánto necesito para ser distribuidor?</summary><p>Depende del paquete de inicio que elijas y de la promoción del mes. Te lo explico en la charla de 15 minutos.</p></details>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2>Tu cuerpo hace el trabajo. Tú solo dale con qué.</h2>
+    <p>Haz el test de 1 minuto y te digo qué te conviene, sin compromiso.</p>
+    <a class="btn" href="#test">Hacer el test ahora</a>
+    <span class="alt">¿Prefieres hablar directo? <a href="https://wa.me/59177424481?text=Hola%20Yunior%2C%20vengo%20de%20tu%20p%C3%A1gina." target="_blank" rel="noopener">WhatsApp 77424481</a></span>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <b>Yunior Figueredo Rosales</b> · Distribuidor Independiente Immunotec · Cochabamba, Bolivia<br>
+    No es el sitio oficial de Immunotec. Immunocal® e Immunotec® son marcas de Immunotec Inc. Los suplementos alimenticios no son medicamentos, no diagnostican, tratan ni curan enfermedades. Los ingresos como distribuidor dependen del esfuerzo de cada persona.
+  </div>
+</footer>
+
+<div class="sticky" id="sticky"><a href="#test">Haz el test de 1 minuto</a></div>
+
+<script>
+(function(){
+  Array.prototype.forEach.call(document.querySelectorAll('.vid-box'), function(box){ var v=box.querySelector('video'), b=box.querySelector('.vid-play'); if(!v||!b) return;
+    b.addEventListener('click', function(){ b.hidden=true; var p=v.play(); if(p&&p.catch) p.catch(function(){}); });
+    v.addEventListener('play', function(){ b.hidden=true; });
+    v.addEventListener('error', function(){ var m=document.createElement('p'); m.className='vid-err'; m.textContent='El video no cargó en este dispositivo. Pídemelo por WhatsApp y te lo envío.'; box.appendChild(m); }); });
+  // WhatsApp: el número visible es el de Yunior; los botones reparten al azar
+  // a cada visitante entre Yunior y Leonardo (y siempre al mismo).
+  var YUNIOR = '59177424481';
+  var PHONES = [YUNIOR, '59170798875'];
+  var PHONE = (function(){
+    var v; try { v = localStorage.getItem('waNum2'); } catch(e) {}
+    if (!v || PHONES.indexOf(v) < 0) { v = PHONES[Math.floor(Math.random()*PHONES.length)]; try { localStorage.setItem('waNum2', v); } catch(e) {} }
+    return v;
+  })();
+  var hola = function(t){ return PHONE === YUNIOR ? t : t.replace(/Hola%20Yunior%2C/g, 'Hola%2C%20vengo%20de%20la%20p%C3%A1gina%20web%20de%20Yunior%20Figueredo%2C').replace(/Hola Yunior,/g, 'Hola, vengo de la página web de Yunior Figueredo,'); };
+  Array.prototype.forEach.call(document.querySelectorAll('a[href^="https://wa.me/"]'), function(a){ a.href = hola(a.href.replace(/wa\.me\/\d+/, 'wa.me/' + PHONE)); });
+  var $ = function(id){ return document.getElementById(id); };
+  var waLink = function(lines){ return 'https://wa.me/' + PHONE + '?text=' + encodeURIComponent(hola(lines.join('\n'))); };
+  function track(ref){ try{ if (window.gtag) gtag('event','whatsapp_click',{origen:ref}); if (window.fbq) fbq('track','Contact',{origen:ref}); }catch(e){} }
+
+  // Ref. A/B/C: A = lo quiere pronto y está en Bolivia; C = solo averigua o no puede.
+  function refOf(ans, qs){
+    var pts = 0, max = 0;
+    qs.forEach(function(Q, n){ max += Math.max.apply(null, Q.o.map(function(o){ return o[1]; })); pts += ans[n][1]; });
+    var browsing = ans.some(function(a){ return /averiguando|Ahora no/.test(a[0]); });
+    return (browsing || pts / max < 0.4) ? 'C' : (pts / max >= 0.7 ? 'A' : 'B');
+  }
+
+  // Motor de preguntas de un toque
+  function flow(cfg){
+    var i = 0, ans = [];
+    function render(){
+      var Q = cfg.qs[i];
+      $(cfg.dots).innerHTML = cfg.qs.map(function(_, n){ return '<i' + (n <= i ? ' class="on"' : '') + '></i>'; }).join('');
+      $(cfg.text).textContent = Q.q;
+      $(cfg.opts).innerHTML = '';
+      Q.o.forEach(function(o){
+        var b = document.createElement('button');
+        b.type = 'button'; b.className = 'opt'; b.textContent = o[0];
+        b.onclick = function(){ ans[i] = o; i++; if (i < cfg.qs.length) render(); else cfg.done(ans); };
+        $(cfg.opts).appendChild(b);
+      });
+      cfg.show();
+    }
+    $(cfg.back).onclick = function(){ if (i > 0){ i--; render(); } else cfg.exit(); };
+    return { start: function(){ i = 0; ans = []; render(); } };
+  }
+
+  // ---------- TEST ----------
+  var FACTORS = [
+    ['🎂','Tengo más de 40 años','40'],
+    ['😮‍💨','Vivo con estrés o duermo poco',''],
+    ['🏃','Hago ejercicio intenso o trabajo físico','sport'],
+    ['🚗','Vivo entre tráfico y contaminación, o fumo',''],
+    ['🥦','Como poca fruta y verdura',''],
+    ['🔋','Me siento cansado(a) a menudo','']
+  ];
+  var box = $('chks');
+  FACTORS.forEach(function(f, n){
+    var l = document.createElement('label'); l.className = 'chk';
+    l.innerHTML = '<input type="checkbox" id="f' + n + '"><span class="box"></span><span class="e">' + f[0] + '</span><span></span>';
+    l.lastChild.textContent = f[1];
+    box.appendChild(l);
+  });
+  var picked = function(){ return FACTORS.filter(function(_, n){ return $('f' + n).checked; }); };
+  box.addEventListener('change', function(){ $('cnt').textContent = picked().length + ' de 6'; });
+
+  var TQS = [
+    {k:'Para cuándo', q:'¿Para cuándo te gustaría empezar?', o:[['Esta semana',3],['Este mes',2],['Solo estoy averiguando',0]]},
+    {k:'Vive en', q:'¿Dónde vives?', o:[['En Cochabamba',2],['En otra ciudad de Bolivia',1],['Fuera de Bolivia',0]]}
+  ];
+  var result = null;
+  function showT(id){ ['t0','tq','td'].forEach(function(s){ $(s).hidden = s !== id; }); }
+  var testFlow = flow({ qs:TQS, dots:'tdots', text:'tqText', opts:'tqOpts', back:'tback',
+    show:function(){ showT('tq'); }, exit:function(){ showT('t0'); },
+    done:function(ans){
+      var ref = refOf(ans, TQS);
+      var lines = ['Hola Yunior, hice el test de la página.', '',
+        '*Resultado:* ' + result.n + ' de 6 factores (' + result.label + ')',
+        '*Marqué:* ' + (result.list.length ? result.list.join(', ') : 'ninguno'),
+        '*Me recomiendas:* ' + result.reco].concat(TQS.map(function(Q, n){ return '*' + Q.k + ':* ' + ans[n][0]; }));
+      lines.push('', '(Vengo de tu página · Ref. ' + ref + ')');
+      $('twa').href = waLink(lines); $('twa').dataset.ref = 'test-' + ref;
+      $('tsum').textContent = 'Resultado: ' + result.n + ' de 6 · ' + result.reco + ' · ' + ans.map(function(a){ return a[0]; }).join(' · ');
+      showT('td');
+    }});
+  $('seeResult').onclick = function(){
+    var p = picked(), n = p.length;
+    var lv = n <= 1 ? 1 : (n <= 3 ? 2 : 3);
+    var label = ['', 'exigencia baja', 'exigencia media', 'exigencia alta'][lv];
+    var reco = p.some(function(f){ return f[2]; }) ? 'Immunocal Platinum' : 'Immunocal';
+    var msg = ['', 'Tus hábitos ayudan. Immunocal es una buena forma de mantenerlos.',
+                   'Tu día a día ya le pide bastante a tu glutatión.',
+                   'Tu estilo de vida le exige mucho a tu glutatión.'][lv];
+    result = {n:n, label:label, reco:reco, list:p.map(function(f){ return f[1]; })};
+    $('res').className = 'result lv' + lv;
+    $('res').innerHTML = '<small>Tu resultado: ' + n + ' de 6</small><div class="bar"><i style="width:' + Math.max(6, n / 6 * 100) + '%"></i></div><b class="big"></b><span>Te recomiendo empezar con <span class="reco"></span>. <a href="#negocio" class="link" style="font-size:.9em">¿Sabías que puedes tomarlo gratis?</a></span>';
+    $('res').querySelector('.big').textContent = msg;
+    $('res').querySelector('.reco').textContent = reco;
+    testFlow.start();
+  };
+  $('trestart').onclick = function(){ showT('t0'); };
+  $('twa').addEventListener('click', function(){ track(this.dataset.ref); });
+
+  // ---------- NEGOCIO ----------
+  var fmt = function(n){ return 'Bs ' + n.toLocaleString('es-BO').replace(/,/g, '.'); };
+  // Ganancia por caja y costo de tu caja: ESTIMADOS (precio público menos 30%). Cambiar por los reales.
+  var GAIN = 245, MYBOX = 573;
+  function calc(){
+    var n = +$('clients').value, g = n * GAIN, f = $('cFree');
+    $('cN').textContent = n; $('cOut').textContent = fmt(g);
+    if (g >= MYBOX){ f.className = 'free ok'; f.textContent = '✓ Tu Immunocal te sale gratis' + (g - MYBOX > 0 ? ' y te sobran ' + fmt(g - MYBOX) : ''); }
+    else { var k = Math.ceil(MYBOX / GAIN) - n; f.className = 'free no'; f.textContent = 'Te falta' + (k > 1 ? 'n ' + k + ' clientes' : ' 1 cliente') + ' para que tu caja te salga gratis'; }
+  }
+  $('clients').addEventListener('input', function(){ $('cHint').hidden = true; $('cOutBox').hidden = false; calc(); }); calc();
+  var BQS = [
+    {k:'Tiempo', q:'¿Cuánto tiempo le podrías dedicar?', o:[['Pocas horas a la semana',1],['Medio tiempo',2],['Tiempo completo',3]]},
+    {k:'Cuándo empezar', q:'¿Cuándo te gustaría empezar?', o:[['Ya, esta semana',3],['Este mes',2],['Solo estoy averiguando',0]]},
+    {k:'Inversión', q:'¿Puedes invertir para empezar?', o:[['Sí, en un paquete de inicio',3],['Poco por ahora',1],['Ahora no puedo',0]]}
+  ];
+  function showB(id){ $('bizFlow').hidden = false; ['bq','bd'].forEach(function(s){ $(s).hidden = s !== id; }); }
+  var bizFlow = flow({ qs:BQS, dots:'bdots', text:'bqText', opts:'bqOpts', back:'bback',
+    show:function(){ showB('bq'); }, exit:function(){ $('bizFlow').hidden = true; },
+    done:function(ans){
+      var ref = refOf(ans, BQS);
+      var lines = ['Hola Yunior, quiero saber cómo tomar Immunocal gratis siendo Distribuidor. ¿Hacemos la charla de 15 minutos?', '',
+        '*Clientes que calculé:* ' + $('clients').value + ' al mes'].concat(BQS.map(function(Q, n){ return '*' + Q.k + ':* ' + ans[n][0]; }));
+      lines.push('', '(Vengo de tu página · Ref. ' + ref + ')');
+      $('bwa').href = waLink(lines); $('bwa').dataset.ref = 'negocio-' + ref;
+      $('bsum').textContent = 'Tus respuestas: ' + ans.map(function(a){ return a[0]; }).join(' · ');
+      showB('bd');
+    }});
+  $('bizStart').onclick = function(){ bizFlow.start(); $('bizFlow').scrollIntoView({behavior:'smooth', block:'nearest'}); };
+  $('bwa').addEventListener('click', function(){ track(this.dataset.ref); });
+
+  // Oculta el botón fijo mientras el test está en pantalla
+  if ('IntersectionObserver' in window){
+    new IntersectionObserver(function(es){ $('sticky').classList.toggle('off', es[0].isIntersecting); }, {threshold:.2}).observe($('test'));
+  }
+})();
+</script>
+</body>
+</html>
