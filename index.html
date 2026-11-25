@@ -7,7 +7,7 @@
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="Haz el test de 1 minuto y descubre cuánto le exige tu estilo de vida a tu glutatión. Immunocal original con entrega a domicilio en Cochabamba y asesoría personal de Yunior Figueredo.">
 <meta name="theme-color" content="#0b4f7c">
-<!-- Vista previa al compartir en Facebook/WhatsApp. -->
+<!-- Vista previa al compartir en Facebook/WhatsApp. PENDIENTE: cambiar https://TU-DOMINIO al publicar. -->
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_BO">
 <meta property="og:title" content="¿Cuánto le exige tu estilo de vida a tus defensas? Test de 1 minuto">
@@ -343,7 +343,7 @@ footer b{color:#fff}
     <div class="photo">
       <div class="ph"><div><span>Y</span>Aquí va tu foto</div></div>
       <img src="img/yunior-producto.jpg" alt="Yunior Figueredo junto a su esposa" onerror="this.remove()">
-      <div class="stamp"><i></i><div><b>Te respondo yo, no un robot</b><br>WhatsApp 77424481</div></div>
+      <div class="stamp"><i></i><div><b>Te responde una persona, no un robot</b><br>WhatsApp 70798875</div></div>
     </div>
     </figure>
   </div>
@@ -622,7 +622,7 @@ footer b{color:#fff}
     <h2>Tu cuerpo hace el trabajo. Tú solo dale con qué.</h2>
     <p>Haz el test de 1 minuto y te digo qué te conviene, sin compromiso.</p>
     <a class="btn" href="#test">Hacer el test ahora</a>
-    <span class="alt">¿Prefieres hablar directo? <a href="https://wa.me/59177424481?text=Hola%20Yunior%2C%20vengo%20de%20tu%20p%C3%A1gina." target="_blank" rel="noopener">WhatsApp 77424481</a></span>
+    <span class="alt">¿Prefieres hablar directo? <a href="https://wa.me/59177424481?text=Hola%20Yunior%2C%20vengo%20de%20tu%20p%C3%A1gina." target="_blank" rel="noopener">WhatsApp 70798875</a></span>
   </div>
 </section>
 
@@ -644,7 +644,7 @@ footer b{color:#fff}
   // WhatsApp: el número visible es el de Yunior; los botones reparten al azar
   // a cada visitante entre Yunior y Leonardo (y siempre al mismo).
   var YUNIOR = '59177424481';
-  var PHONES = [YUNIOR, '59170798875'];
+  var PHONES = ['59170798875']; // temporal: todo a Leonardo hasta que Yunior tenga línea nueva
   var PHONE = (function(){
     var v; try { v = localStorage.getItem('waNum2'); } catch(e) {}
     if (!v || PHONES.indexOf(v) < 0) { v = PHONES[Math.floor(Math.random()*PHONES.length)]; try { localStorage.setItem('waNum2', v); } catch(e) {} }
